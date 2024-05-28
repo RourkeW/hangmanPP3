@@ -1,4 +1,5 @@
 import random
+import platform
 
 print("Play HangMan")
 
@@ -60,12 +61,12 @@ def draw_hangman(wrong_count):
         print("|/   |")
         print("|    O")
         print("|    \|/")
-        print("|    / \")
+        print("|    / \"")
         print("|\___")
 
 # might have to switch which side the man hangs from
 
-def show_word(correct_guesses)
+def show_word(correct_guesses):
     counter = 0
     correctLetters = 0
     for char in randomWord:
@@ -85,3 +86,19 @@ def printWord():
     print("\r")
     for char in randomWord:
         print("\u203E")# found this online not sure whether to use this special character for the unknown letters
+
+# After a meeting with my tutor I was advised to use a clear screen style to reproduce the game as it is played rather than risk having things stacked ontop of each other
+
+def clear_screen():
+    # remember to call this after each letter is guessed in the gamplay function
+    if platform.system() == "Windows":
+        if platform.release() in {"10", "11"}:
+            subprocess.run("", shell=True)
+            print("/033c", end="")
+        else: 
+            subprocess.run(["cls"])
+    else:
+        print("/033c", end="")
+
+
+
