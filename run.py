@@ -107,5 +107,15 @@ def clear_screen():
     else:
         print("/033c", end="")
 
+# Counter for the length of the word the player will guess
+word_to_guess_length = len(randomWord)
+# Wrong guess count starting at 0 since the game is starting
+wrong_guess_count = 0
+current_guess_index = 0
+# current letters that have been guessed altogether
+total_letters_guessed = 0
+#letters guessed correctly counter
+correct_guesses = 0
+
 
 
