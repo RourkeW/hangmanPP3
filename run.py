@@ -63,3 +63,25 @@ def draw_hangman(wrong_count):
         print("|    / \")
         print("|\___")
 
+# might have to switch which side the man hangs from
+
+def show_word(correct_guesses)
+    counter = 0
+    correctLetters = 0
+    for char in randomWord:
+        if(char in correct_guesses):
+            print(randomWord[counter])
+            correct_letters += 1
+        else:
+            print(" ")
+            counter += 1
+        return correct_letters
+
+#function to discover letters
+
+#function below shows the underscores for the randomWord chosen
+
+def printWord():
+    print("\r")
+    for char in randomWord:
+        print("\u203E")# found this online not sure whether to use this special character for the unknown letters
