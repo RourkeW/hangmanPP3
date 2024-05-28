@@ -3,12 +3,15 @@ import platform
 
 print("Play HangMan!")
 
-#wordPool = ['front', 'sip', 'day', 'shorts', 'journal', 'alive', 'heel', 'film', 'carry', 'referee', 'burial', 'thinker', 'crown', 'branch', 'pan', 'exempt', 'dough', 'spy', 'dump', 'collect', 'water', 'license', 'closed', 'paper', 'wire', 'lobby', 'rib', 'posture', 'meaning', 'divide']
+wordPool = ['front', 'sip', 'day', 'shorts', 'journal', 'alive', 'heel', 'film', 'carry', 'referee', 'burial', 'thinker', 'crown', 'branch', 'pan', 'exempt', 'dough', 'spy', 'dump', 'collect', 'water', 'license', 'closed', 'paper', 'wire', 'lobby', 'rib', 'posture', 'meaning', 'divide']
 # neaten this
 # perhaps find a genre for the toopic of these words i.e. gaming, cars...
 
 # Choose the random word from the wordPool
-randomWord = "https://random-word-api.herokuapp.com/word?length=6"
+randomWord = random.choice(wordPool)
+
+for x in randomWord:
+    print("_", end=" ")
 
 # I need to find a way of making an underscore for each letter in the randomly chosen word and seperate them with a space so that the user can easily identify the amount of letters in the randomly chosen word to guess (for loop maybe?)
 
@@ -78,10 +81,10 @@ def show_word(correct_guesses):
     correctLetters = 0
     for char in randomWord:
         if(char in correct_guesses):
-            print(randomWord[counter])
+            print(randomWord[counter], end=" ")
             correct_letters += 1
         else:
-            print(" ")
+            print("_", end=" ")
             counter += 1
         return correct_letters
 
@@ -92,7 +95,7 @@ def show_word(correct_guesses):
 def printWord():
     print("\r")
     for char in randomWord:
-        print("\u203E")# found this online not sure whether to use this special character for the unknown letters
+        print("\u203E", end=" ")# found this online not sure whether to use this special character for the unknown letters
 
 # After a meeting with my tutor I was advised to use a clear screen style to reproduce the game as it is played rather than risk having things stacked ontop of each other
 
@@ -117,10 +120,10 @@ current_letters_guessed = 0
 #letters guessed correctly counter
 correct_letters = 0
 
-while(wrong_guess_count != 6 and correct_letters != word_to_guess_length):
+while (wrong_guess_count != 6 and correct_letters != word_to_guess_length):
     print("\nLetters guessed so far: ") 
     for letter in current_letters_guessed:
-        print(letter)
+        print(letter, end = " ")
     # User enters a letter now
     letter_guessed = input("\nPlease guess a letter")
     # Correct
@@ -137,3 +140,6 @@ while(wrong_guess_count != 6 and correct_letters != word_to_guess_length):
         current_letters_guessed.append(letter_guessed)
         draw_hangman(wrong_guess_count)
         correct_letters = show_word(current_letters_guessed)
+        printWord()
+
+print("Game is over")
