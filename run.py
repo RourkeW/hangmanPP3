@@ -20,11 +20,13 @@ def draw_hangman(wrong_count):
         print("|")
         print("|")
         print("|")
+        print("|")
         print("|\___")
     elif(wrong_count == 1):
         print("\n------")
         print("|/   |")
         print("|    O")
+        print("|")
         print("|")
         print("|")
         print("|\___")
@@ -34,12 +36,14 @@ def draw_hangman(wrong_count):
         print("|    O")
         print("|    |")
         print("|")
+        print("|")
         print("|\___")
     elif(wrong_count == 3):
         print("\n------")
         print("|/   |")
         print("|    O")
         print("|    \|")
+        print("|")
         print("|")
         print("|\___")
     elif(wrong_count == 4):
@@ -48,6 +52,7 @@ def draw_hangman(wrong_count):
         print("|    O")
         print("|    \|/")
         print("|")
+        print("|")
         print("|\___")
     elif(wrong_count == 5):
         print("\n------")
@@ -55,6 +60,7 @@ def draw_hangman(wrong_count):
         print("|    O")
         print("|    \|/")
         print("|    /")
+        print("|")
         print("|\___")
     elif(wrong_count == 6):
         print("\n------")
@@ -62,6 +68,7 @@ def draw_hangman(wrong_count):
         print("|    O")
         print("|    \|/")
         print("|    / \"")
+        print("|")
         print("|\___")
 
 # might have to switch which side the man hangs from
