@@ -103,7 +103,7 @@ def clear_screen():
 
 def play(word):
     # display the unguessed letters as underscores I make a string equal to the random word initially this is false of course
-    word_completion = "_" * len(word)
+    word_completion = "_ " * len(word)
     guessed = False
     # this array holds the letters a user has guessed so later I can make it so they cannot guess it again and I can not deduct a attempt count
     guessed_letters = []
@@ -165,6 +165,10 @@ def play(word):
 
 # This is the main function to run the game once and then promt for a play again
 def main():
+    word = random.choice(word_Pool)
+    # I had to redefine this as I wanted to make it extra clear to the user how long this word is I had some trouble on heroku seeing 
+    print("Letters in word to guess:")
+    print(len(word))
     word = get_word()
     play(word)
     while input("Try Again? (Y/N) ").upper() == "Y":
