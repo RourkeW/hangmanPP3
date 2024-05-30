@@ -1,15 +1,9 @@
 import random
-import platform
-import subprocess
-
-word_Pool = ['front', 'sip', 'day', 'shorts', 'journal', 'alive', 'heel', 'film', 'carry', 'referee', 'burial', 'thinker', 'crown', 'branch', 'pan', 'exempt', 'dough', 'spy', 'dump', 'collect', 'water', 'license', 'closed', 'paper', 'wire', 'lobby', 'rib', 'posture', 'meaning', 'divide']
-# neaten this
-# perhaps find a genre for the toopic of these words i.e. gaming, cars...
-#Use an WordAPI?
+from words import word_list
 
 # Choose the random word from the wordPool
 def get_word():
-    word = random.choice(word_Pool)
+    word = random.choice(word_list)
     return word.upper()
 #I chose to use the .upper() here since I want the answer to be more visible
 
@@ -88,19 +82,6 @@ def display_hangman(tries):
     ]
     return stages[tries]
 
-# The function below clears the screen
-def clear_screen():
-    # remember to call this after each letter is guessed in the gamplay function
-    if platform.system() == "Windows":
-        if platform.release() in {"10", "11"}:
-            subprocess.run("", shell=True)
-            print("/033c", end="")
-        else: 
-            subprocess.run(["cls"])
-    else:
-        print("/033c", end="")
-
-
 def play(word):
     # display the unguessed letters as underscores I make a string equal to the random word initially this is false of course
     word_completion = "_ " * len(word)
@@ -165,10 +146,6 @@ def play(word):
 
 # This is the main function to run the game once and then promt for a play again
 def main():
-    word = random.choice(word_Pool)
-    # I had to redefine this as I wanted to make it extra clear to the user how long this word is I had some trouble on heroku seeing 
-    print("Letters in word to guess:")
-    print(len(word))
     word = get_word()
     play(word)
     while input("Try Again? (Y/N) ").upper() == "Y":
