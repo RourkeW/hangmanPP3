@@ -120,26 +120,6 @@ current_letters_guessed = 0
 #letters guessed correctly counter
 correct_letters = 0
 
-while (wrong_guess_count != 6 and correct_letters != word_to_guess_length):
-    print("\nLetters guessed so far: ") 
-    for letter in current_letters_guessed:
-        print(letter, end = " ")
-    # User enters a letter now
-    letter_guessed = input("\nPlease guess a letter")
-    # Correct
-    if(randomWord[current_guess_index] == letter_guessed):
-        draw_hangman(wrong_guess_count)
-        current_guess_index += 1
-        # Add the letter to the array so the user wont guess it again
-        current_letters_guessed.append(letter_guessed)
-        correct_letters = show_word(current_letters_guessed)
-        printWord()
-    # Incorrect
-    else:
-        wrong_guess_count += 1
-        current_letters_guessed.append(letter_guessed)
-        draw_hangman(wrong_guess_count)
-        correct_letters = show_word(current_letters_guessed)
-        printWord()
+
 
 print("Game is over")
