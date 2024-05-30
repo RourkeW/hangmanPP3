@@ -130,7 +130,7 @@ def play(word):
                 word_as_list = list(word_completion)
                 # list comprehension and using enumerate, I did not learn this on code institute however I found it on various other sources and people have used it to count iterations when looping I wanted to try
                 indices = [i for i, letter in enumerate(word) if letter == guess]
-                # I will now iterate over ythe indices to replace the letters when guessed correctly
+                # I will now iterate over the indices to replace the letters when guessed correctly
                 for index in indices:
                     word_as_list[index] = guess
                 #now I am converting it back to a string
