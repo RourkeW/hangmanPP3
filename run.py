@@ -84,20 +84,6 @@ def display_hangman(tries):
     ]
     return stages[tries]
 
-def clear_screen():
-    """
-    clearing screen for both windows/os users when called in other functions
-    """
-    if platform.system() == "Windows":
-        if platform.release() in {"10", "11"}:
-            subprocess.run("", shell=True)
-            print("\033c", end="")
-        else:
-            subprocess.run(["cls"])
-    else:
-        print("\033c", end="")
-    
-
 def play(word):
     # display the unguessed letters as underscores I make a string equal to the random word initially this is false of course
     word_completion = "_" * len(word)
