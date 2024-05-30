@@ -1,5 +1,7 @@
 import random
 from words import word_list
+import subprocess
+import platform
 
 # Choose the random word from the wordPool
 def get_word():
@@ -82,6 +84,20 @@ def display_hangman(tries):
     ]
     return stages[tries]
 
+def clear_screen():
+    """
+    clearing screen for both windows/os users when called in other functions
+    """
+    if platform.system() == "Windows":
+        if platform.release() in {"10", "11"}:
+            subprocess.run("", shell=True)
+            print("\033c", end="")
+        else:
+            subprocess.run(["cls"])
+    else:
+        print("\033c", end="")
+    
+
 def play(word):
     # display the unguessed letters as underscores I make a string equal to the random word initially this is false of course
     word_completion = "_" * len(word)
@@ -153,6 +169,7 @@ def main():
     play(word)
     while input("Try Again? (Y/N) ").upper() == "Y":
         #This above makes the function run as long as the user is clicking Y
+        clear_screen()
         word = get_word()
         play(word)
 # I found in another YouTube video that you can enter this and the script will run on the command line ASK TUTOR HERE
