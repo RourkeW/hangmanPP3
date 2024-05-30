@@ -1,5 +1,6 @@
 import random
 import platform
+import subprocess
 
 word_Pool = ['front', 'sip', 'day', 'shorts', 'journal', 'alive', 'heel', 'film', 'carry', 'referee', 'burial', 'thinker', 'crown', 'branch', 'pan', 'exempt', 'dough', 'spy', 'dump', 'collect', 'water', 'license', 'closed', 'paper', 'wire', 'lobby', 'rib', 'posture', 'meaning', 'divide']
 # neaten this
@@ -86,6 +87,18 @@ def display_hangman(tries):
                 """
     ]
     return stages[tries]
+
+# The function below clears the screen
+def clear_screen():
+    # remember to call this after each letter is guessed in the gamplay function
+    if platform.system() == "Windows":
+        if platform.release() in {"10", "11"}:
+            subprocess.run("", shell=True)
+            print("/033c", end="")
+        else: 
+            subprocess.run(["cls"])
+    else:
+        print("/033c", end="")
 
 
 def play(word):
