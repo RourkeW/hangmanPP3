@@ -19,9 +19,9 @@ def display_hangman(tries):
                    --------
                    |      |
                    |      O
-                   |     \|/
+                   |     \\|/
                    |      |
-                   |     / \
+                   |     / \\
                    -
                 """,
                 # head, mid-section and one leg comes when 5 guesses are wrong
@@ -29,7 +29,7 @@ def display_hangman(tries):
                    --------
                    |      |
                    |      O
-                   |     \|/
+                   |     \\|/
                    |      |
                    |     / 
                    -
@@ -39,7 +39,7 @@ def display_hangman(tries):
                    --------
                    |      |
                    |      O
-                   |     \|/
+                   |     \\|/
                    |      |
                    |      
                    -
@@ -49,7 +49,7 @@ def display_hangman(tries):
                    --------
                    |      |
                    |      O
-                   |     \|
+                   |     \\|
                    |      |
                    |     
                    -
