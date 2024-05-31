@@ -71,6 +71,10 @@ Throughout this project I have been testing the game by running it in the Termin
 3. clear screen- I ahve a clear screen function to clear the screen each time a new game is being played
 4. I ahd to amke sure you could not guess non character letters or words, I did this using the .isalpha() method on any guesses made, I also used .upper() to make sure everything is better read so if a guess is made in lower case it will be displayed in upper case
 
+## Unresolved Bugs
+
+1. No unresolved bugs.
+
 ## Validator Testing
 
 
