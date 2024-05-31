@@ -76,7 +76,8 @@ Throughout this project I have been testing the game by running it in the Termin
 1. No unresolved bugs.
 
 ## Validator Testing
-
+The code was ran through the CI Python Linter with some erros but they related to the way my hangman is being drawn stating issues with the space or too many characters on the line since they are huge arrays
+![Game](read.me_images/ci_valid.JPG)
 
 # Deployment
 
