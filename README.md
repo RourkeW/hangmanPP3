@@ -28,9 +28,27 @@ I really liked using this Lucid chart website to create my plan for the game, I 
 ![Start](read.me_images/the_game.JPG)
 
 ### Play game - Correct Guess
-1. The user enters a guess that is included in the word
+1. The user enters a guess that is included in the word, the letter is drawn the hangman is not drawn and the user cannot make this guess again
 ![correct_guess](read.me_images/correct_guess.JPG)
 
 ### Play game - Incorrect Guess
-1. The user enters a guess that is not included in the word
+1. The user enters a guess that is not included in the word, the hangman is drawn partially and the guess cannot be made again
 ![incorrect_guess](read.me_images/incorrect_guess.JPG)
+
+### Play Game - Invalid Guess
+1. This code detects whether a user has entered a partial word, or a number or special character, these are not accepted in the program so a message is displayed
+
+![Invalid_guess](read.me_images/incorrect_guess.JPG)
+
+### Play Game - Game Over
+1. If the player makes 6 wrong guesses then the hangman will be fully drawn and the game will prompt a loss message and then another promt to restart
+
+![GameOver](read.me_images/game_over.JPG)
+
+### Play Game - Winner!
+![Winner](read.me_images/winner.JPG)
+
+## Future features 
+
+1. I would like to be able to make a multiplayer version since I think the game is more enjoyable when you make the word yourself and someone else guesses it.
+2. I would also like to try and impliment a online WordAPI toi choose the words, rright now the game words from an imported py file within the directory that pulls a random word from a list. However my tutor Luke asked me to look into a word API as this would involve way more than 300 words. I tried this one https://random-word-api.herokuapp.com/home and I used the call to the API https://random-word-api.herokuapp.com/word?length=6 to constantly generate a new 6 letter word, you can also use a range. However I was very surprised by the complexity of the words coming back to me since I did not recognise any of them and it made me doubt my knowledge of english. even limiting the API to only support the lang="en" I could not recognise alot of the words.
