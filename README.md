@@ -70,6 +70,7 @@ Throughout this project I have been testing the game by running it in the Termin
 2. I had an issue when first creatying the hangman that a bunch of value errors would show since it did not like a backslash being next to a quotation mark, I played with this and found if I put another backslash there it would not be an issue anymore an dowuld not show up twice on the ahngman.
 3. clear screen- I ahve a clear screen function to clear the screen each time a new game is being played
 4. I ahd to amke sure you could not guess non character letters or words, I did this using the .isalpha() method on any guesses made, I also used .upper() to make sure everything is better read so if a guess is made in lower case it will be displayed in upper case
+5. I also added in a counter at the start of the game to letr the player know the amount of letter in the hidden word to guess.
 
 ## Unresolved Bugs
 
