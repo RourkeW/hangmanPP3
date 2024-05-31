@@ -7,7 +7,7 @@ import platform
 def get_word():
     word = random.choice(word_list)
     return word.upper()
-#I chose to use the .upper() here since I want the answer to be more visible
+# I chose to use the .upper() here since I want the answer to be more visible
 
 # function that will draw the hangman as the user guesses wrong
 def display_hangman(tries):
@@ -133,7 +133,7 @@ def play(word):
                 # I will now iterate over the indices to replace the letters when guessed correctly
                 for index in indices:
                     word_as_list[index] = guess
-                #now I am converting it back to a string
+                # now I am converting it back to a string
                 word_completion = "".join(word_as_list)
                 # it is possible that the guess completes the word but the user didnt type the word completely so I write if there are no underscores the game is done
                 if "_" not in word_completion:
@@ -167,7 +167,7 @@ def main():
     word = get_word()
     play(word)
     while input("Try Again? (Y/N) ").upper() == "Y":
-        #This above makes the function run as long as the user is clicking Y
+        # This above makes the function run as long as the user is clicking Y
         clear_screen()
         word = get_word()
         play(word)
