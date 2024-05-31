@@ -25,4 +25,12 @@ I really liked using this Lucid chart website to create my plan for the game, I 
 
 ### The Game
 1. The game showing a prompt to enter a letter and the basic gallows drawn
-![Start](read.me_images/)
+![Start](read.me_images/the_game.JPG)
+
+### Play game - Correct Guess
+1. The user enters a guess that is included in the word
+![correct_guess](read.me_images/correct_guess.JPG)
+
+### Play game - Incorrect Guess
+1. The user enters a guess that is not included in the word
+![incorrect_guess](read.me_images/incorrect_guess.JPG)
