@@ -52,3 +52,40 @@ I really liked using this Lucid chart website to create my plan for the game, I 
 
 1. I would like to be able to make a multiplayer version since I think the game is more enjoyable when you make the word yourself and someone else guesses it.
 2. I would also like to try and impliment a online WordAPI toi choose the words, rright now the game words from an imported py file within the directory that pulls a random word from a list. However my tutor Luke asked me to look into a word API as this would involve way more than 300 words. I tried this one https://random-word-api.herokuapp.com/home and I used the call to the API https://random-word-api.herokuapp.com/word?length=6 to constantly generate a new 6 letter word, you can also use a range. However I was very surprised by the complexity of the words coming back to me since I did not recognise any of them and it made me doubt my knowledge of english. even limiting the API to only support the lang="en" I could not recognise alot of the words.
+
+# Technologies
+
+* The game is completely written in Python.
+* The IDE used was GitPod using the Code Institute template.
+* Heroku was used to deploy the project.
+* GitPod has been used to regularly adding, committing and pushing code to GitHub.
+* All code and assets have been stored at GitHub.
+
+# Testing
+
+
+## Solved bugs
+
+
+## Validator Testing
+
+
+# Deployment
+
+## Adding, committing and pushing code
+- I pushed all my code to the repository https://github.com/RourkeW/hangmanPP3
+- All code here has been commited regulary and pushed atleast once daily throughout the making of the project.
+- The commands used to do this are:
+- 'git add .', 'git commit -m "feat: commit message" and ffinally 'git push'
+
+## Deploying to Heroku
+I deployed my project directly to Heroku by doing the following:
+
+1. Created the account on Heroku.com following the walkthrough project.
+2. I added my own personal billing information but it does not matter since we get a free 5 project limit
+3. Clicked on "Create new app" and named it hangmanpp3rw, it is long because they have to be unique compared to all users on heroku
+4. Clicked on Settings and added Backpacks - Python and Node.js.
+5. Made sure the backpacks were in the right order.
+6. Connected my GitHub profile and found the right Repository.
+7. Manually deployed the page and clicked "Eanble automatic deploys" at the same time.
+
