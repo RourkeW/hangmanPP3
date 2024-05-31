@@ -5,7 +5,7 @@
 This is a project based on the classic hangman game using words chosen at random by the import random module in python, I learnt alot in this project and had some good fun overcoming challenges whilst building it.
 
 * The GitHub repository for this project can be found here https://github.com/RourkeW/hangmanPP3
-* The project has been deployed on heroku, this can be found here https://hangmanpp3rw-07abbe2bff2a.herokuapp.com/
+* The project has been deployed on heroku, this can be found here [https://hangmanpp3rw-07abbe2bff2a.herokuapp.com/](https://hangmanpp3rw-07abbe2bff2a.herokuapp.com/)
 
 ## How to play 
 1. The game is set up by drawing empty gallows and the player is asked to guess the word or letter.
