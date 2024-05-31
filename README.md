@@ -94,3 +94,6 @@ I deployed my project directly to Heroku by doing the following:
 2. Simplistic code and functionality has been inspired from [Shaun Halverson,How To Code Hangman In Python | Tutorial For Beginners](https://www.youtube.com/watch?v=pFvSb7cb_Us&t=723s)
 3. I used some of the idea's Shaun presented here but ultimately tooka  different approach, I did however use the drawing of the hangman from him.
 4. As usual a great deal of research into ideas and troubleshooting on [Stack Overflow](https://stackoverflow.com/), [W3 Schools](https://www.w3schools.com/) and a new website I like called [Geeks for Geeks](https://www.geeksforgeeks.org/)
+
+# Acknowledgement
+1. As usual big thanks to my mentor Luke who had some great ideas and was quick to the rescue when I would ask questions and raise minor problems in mentor meetings.
