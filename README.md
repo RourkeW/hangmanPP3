@@ -16,5 +16,13 @@ This is a project based on the classic hangman game using words chosen at random
 6. If the player reaches 6 incorrect guesses then the game will end witha  game over message and there will be a prompt to restart the game and the user is informed of the word that was to be guessed.
 7. If the player manages to guess the word by letter or the full word then a message will display to let them that they have won and there will be a prompt to restart the game, I did not make it so words are remove from the wordpool because I thought its better this way.
 
-# Design of the game
+## Design of the game
 ![LucidChart](read.me_images/plan_hangman.png)
+
+I really liked using this Lucid chart website to create my plan for the game, I saw it being used in the love-sandwiches walkthrough project and thought I would use it in my own planning.
+
+## Features
+
+### The Game
+1. The game showing a prompt to enter a letter and the basic gallows drawn
+![Start](read.me_images/)
