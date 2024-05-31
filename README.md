@@ -1,32 +1,20 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# HangMan Game
 
-Welcome,
+![am-i-responsive](read.me_images/am_i_responsive.JPG)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+This is a project based on the classic hangman game using words chosen at random by the import random module in python, I learnt alot in this project and had some good fun overcoming challenges whilst building it.
 
-## Reminders
+* The GitHub repository for this project can be found here https://github.com/RourkeW/hangmanPP3
+* The project has been deployed on heroku, this can be found here https://hangmanpp3rw-07abbe2bff2a.herokuapp.com/
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## How to play 
+1. The game is set up by drawing empty gallows and the player is asked to guess the word or letter.
+2. The player inputs a guess being a letter or a word(e.g. "A" or "E") I included a clause to detect if the word or letter has been guessed in the playthough so the user cannot make the same guess by mistake.
+3. In classic hangman you have 6 incorrect guesses before the game is lost, I have chosen this approach too.
+4. If a player guesses incorrectly then part of the hangman is drawn, (head, head and torso, head, torso and one arm, head torso, and both arms, head, torso, both arms and one leg and finally head, torso, botha rms and both legs(I did this using ascii and a array to redraw the hangman each time)
+5. if the player makes a correct guess then the missing space filled with an underscore is filled in and theya re not penalised. 
+6. If the player reaches 6 incorrect guesses then the game will end witha  game over message and there will be a prompt to restart the game and the user is informed of the word that was to be guessed.
+7. If the player manages to guess the word by letter or the full word then a message will display to let them that they have won and there will be a prompt to restart the game, I did not make it so words are remove from the wordpool because I thought its better this way.
 
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
----
-
-Happy coding!
+# Design of the game
+![LucidChart](read.me_images/plan_hangman.png)
