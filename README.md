@@ -62,10 +62,14 @@ I really liked using this Lucid chart website to create my plan for the game, I 
 * All code and assets have been stored at GitHub.
 
 # Testing
-
+Throughout this project I have been testing the game by running it in the Terminal. 
+![Testing](read.me_images/testing_table.JPG)
 
 ## Solved bugs
-
+1. I had to make sure that the program would not accept the same word twice, I used an array to append guesses each time one is amde, and then if this is guessed again a message reminding the user that the guess was already made is displayed.
+2. I had an issue when first creatying the hangman that a bunch of value errors would show since it did not like a backslash being next to a quotation mark, I played with this and found if I put another backslash there it would not be an issue anymore an dowuld not show up twice on the ahngman.
+3. clear screen- I ahve a clear screen function to clear the screen each time a new game is being played
+4. I ahd to amke sure you could not guess non character letters or words, I did this using the .isalpha() method on any guesses made, I also used .upper() to make sure everything is better read so if a guess is made in lower case it will be displayed in upper case
 
 ## Validator Testing
 
